@@ -8,7 +8,7 @@
 int main(void)
 {
 	int ch;
-	for (ch = 0; ch < 8; ch++);
+	for (ch = 0; ch < 9; ch++);
 	_putchar('-');
         _putchar('p');
         _putchar('u');
