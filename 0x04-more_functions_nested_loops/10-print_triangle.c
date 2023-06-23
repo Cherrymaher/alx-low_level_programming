@@ -1,17 +1,34 @@
 #include "main.h"
 
 /**
- * _isdigit - input
+ * print_triangle - entry point
  *
- * Description: define if a character is a number
- * @c: charater
- * Return: 1 yes 0 no
+ * Description: Prints diagonals
+ *@size: size of the triangle
+ * Return: void
  */
 
-int _isdigit(int c)
+void print_triangle(int size)
 {
-	if (c >= '0' && c <= '9')
-		return (1);
+	int row, hashes, spaces;
+
+	if (size <= 0)
+	{
+		_putchar('\n');
+	}
 	else
-		return (0);
+	{
+		for (row = 1; row <= size; row++)
+		{
+			for (spaces = size - row; spaces >= 1; spaces--)
+			{
+				_putchar(' ');
+			}
+			for (hashes = 1; hashes <= row; hashes++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
+		}
+	}
 }
