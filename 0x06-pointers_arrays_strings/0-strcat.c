@@ -2,6 +2,7 @@
 #include <stdio.h>
 /**
  * _strcat - concatenates two strings
+ *
  * @dest: input value
  * @src: input value
  * Return:void
@@ -15,9 +16,8 @@ char *_strcat(char *dest, char *src);
 	while (dest[c])
 		c++;
 
-	for (i = 0; i < n && src[i]; != '\0' i++)
-		dest[c + i] = src[i];
-	 dest[c + i] = '\0';
+	for (c2 = 0; src[c2]; c2++)
+		dest[c++] = src[c2];
 
-	 return (dest);
+	return (dest);
 }
