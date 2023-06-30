@@ -11,13 +11,13 @@ char *_strcat(char *dest, char *src);
 	int c, c2;
 
 	c = 0;
-	/*find the size of dest array*/
 
 	while (dest[c])
 		c++;
 
-	for (c2 = 0; src[c2]; c2++)
-		dest[c++] = src[c2];
+	for (i = 0; i < n && src[i]; != '\0' i++)
+		dest[c + i] = src[i];
+	 dest[c + i] = '\0';
 
-	return (dest);
+	 return (dest);
 }
