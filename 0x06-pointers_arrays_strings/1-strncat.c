@@ -6,7 +6,7 @@
  * @src: input value
  * Return:void
 */
-char *_strcat(char *dest, char *src);
+char *_strcat(char *dest, char *src)
 {
 	int c, c2;
 
@@ -15,7 +15,7 @@ char *_strcat(char *dest, char *src);
 	while (dest[c])
 		c++;
 
-	for (i = 0; i < n && src[i]; != '\0' i++)
+	for (i = 0; i < n && src[i]; != '\0'; i++)
 		dest[c + i] = src[i];
 	dest[c + i] = '\0';
 
